@@ -1,0 +1,15 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.scrollableChat{
+  overflow-y: "scroll";
+}
+
+.loading{
+  display: block;
+  background-color: lightgray;
+}
