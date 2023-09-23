@@ -47,7 +47,7 @@ const GroupModal = ({children}) => {
                 },
             };
 
-            const { data } = await axios.get(`/api/user?search=${search}`, config);
+            const { data } = await axios.get(`https://webappp.onrender.com/api/user?search=${search}`, config);
             setLoading(false);
             setSearchResult(data);
 
@@ -82,7 +82,7 @@ const GroupModal = ({children}) => {
                     },
                 };
                 const { data } = await axios.post(
-                    `/api/chat/group`,
+                    `https://webappp.onrender.com/api/chat/group`,
                     {
                         name: groupChatName,
                         users: JSON.stringify(selectedUsers.map((u) => u._id)),
