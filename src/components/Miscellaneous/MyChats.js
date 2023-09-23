@@ -25,7 +25,7 @@ const MyChats = ({fetchAgain}) => {
         }
       };
 
-      const {data} = await axios.get('/api/chat',config);
+      const {data} = await axios.get('https://webappp.onrender.com/api/chat',config);
       setChats(data);
       setLoading(false)
     }
